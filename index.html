@@ -3,6 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>مرام حسن | Portfolio</title>
+  <style>
+  body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+
+  #darkModeBtn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+  }
+  </style>
 </head>
 <body>
 
@@ -22,6 +37,13 @@
 
   <h2>تواصل معي</h2>
   <p>📧 البريد الإلكتروني: maram@email.com</p>
+<script>
+  const btn = document.getElementById("darkModeBtn");
 
+  btn.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+  });
+</script>
 </body>
+  button id="darkModeBtn">🌙 الوضع الليلي</button>
 </html>
