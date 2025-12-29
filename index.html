@@ -1,49 +1,194 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>مرام حسن | Portfolio</title>
-  <style>
-  body.dark-mode {
-    background-color: #121212;
-    color: white;
-  }
+    <meta charset="UTF-8">
+    <title>مرام حسن فضل الله</title>
 
-  #darkModeBtn {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    padding: 8px 12px;
-    border: none;
-    cursor: pointer;
-  }
-  </style>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            direction: rtl;
+            background-color: #f2f5f9;
+        }
+
+        /* ===== NAV ===== */
+        nav {
+            background-color: #0a3d62;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            animation: fadeDown 1s ease;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #fbc531;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            text-align: center;
+            padding: 40px;
+            background-color: white;
+            animation: fadeUp 1.2s ease;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #0a3d62;
+            animation: zoomIn 1.5s ease;
+        }
+
+        header h1 {
+            color: #0a3d62;
+            margin-top: 15px;
+        }
+
+        /* ===== SECTIONS ===== */
+        section {
+            background: white;
+            margin: 20px;
+            padding: 30px;
+            border-radius: 10px;
+            animation: fadeUp 1.2s ease;
+        }
+
+        h2 {
+            color: #0a3d62;
+        }
+
+        /* ===== SOCIAL ===== */
+        .social-icons {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            font-size: 28px;
+            margin: 10px;
+            color: #0a3d62;
+        }
+
+        .social-icons a:hover {
+            color: #fbc531;
+        }
+
+        /* ===== FORM ===== */
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background-color: #0a3d62;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: #0a3d62;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            animation: fadeUp 1.2s ease;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
 </head>
+
 <body>
 
-  <h1>مرام حسن</h1>
-  <p>مهتمة بتصميم وتطوير مواقع الويب وأسعى لتطوير مهاراتي باستمرار</p>
+<!-- ===== NAV ===== -->
+<nav>
+    <a href="#about">عني</a>
+    <a href="#projects">مشروعاتي</a>
+    <a href="#contact">تواصل معي</a>
+</nav>
 
-  <hr>
+<!-- ===== HEADER ===== -->
+<header>
+    <img src="profile.jpg" alt="صورتي">
+    <h1>مرام حسن فضل الله</h1>
+</header>
 
-  <h2>مهاراتي</h2>
-  <ul>
-    <li>HTML</li>
-    <li>CSS (قيد التعلم)</li>
-    <li>JavaScript (قيد التعلم)</li>
-  </ul>
+<!-- ===== ABOUT ===== -->
+<section id="about">
+    <h2>نبذة عني</h2>
+    <p>
+        أنا مرام حسن فضل الله، طالبة تقانة معلومات،
+        مهتمة بتصميم وتطوير مواقع الويب وبناء مشاريع تقنية
+        تساعدني على تطوير مهاراتي الأكاديمية والعملية.
+    </p>
 
-  <hr>
+    <div class="social-icons">
+        <a href="https://wa.me/249115529756" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://facebook.com/Mramhassan" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+    </div>
+</section>
 
-  <h2>تواصل معي</h2>
-  <p>📧 البريد الإلكتروني: maram@email.com</p>
-<script>
-  const btn = document.getElementById("darkModeBtn");
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+    <h2>مشروعاتي</h2>
+    <p>سيتم هنا عرض المشاريع التي قمت بتنفيذها أثناء دراستي.</p>
+</section>
 
-  btn.addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
-  });
-</script>
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+    <h2>تواصل معي</h2>
+
+    <form>
+        <input type="text" placeholder="الاسم">
+        <input type="email" placeholder="البريد الإلكتروني">
+        <textarea rows="5" placeholder="اكتب رسالتك هنا"></textarea>
+        <button type="submit">إرسال</button>
+    </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2025 مرام حسن فضل الله – جميع الحقوق محفوظة</p>
+</footer>
+
 </body>
-  button id="darkModeBtn">🌙 الوضع الليلي</button>
-</html>
+  </html>
